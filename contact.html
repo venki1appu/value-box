@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - ValueFurnish</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-205NDTZ64G"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-205NDTZ64G');
-    </script>
     <style>
         .contact {
             padding: 50px 20px;
@@ -28,41 +20,10 @@
             margin-bottom: 30px;
             color: #333;
         }
-        .contact form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .contact label {
-            font-size: 16px;
-            margin-bottom: 8px;
-            display: block;
-            text-align: left;
-            color: #555;
-        }
-        .contact input, .contact textarea {
+        .contact iframe {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            color: #333;
-        }
-        .contact button {
-            padding: 12px 20px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #4CAF50;
+            height: 500px;
             border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .contact button:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
@@ -83,17 +44,7 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Thank you so much for your interest! We are launching very soon. Please provide your information below for our launch notification and special discounts!</p>
-            <form action="save_contact.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+            <iframe src="https://docs.google.com/forms/d/e/1J9ZnMXNJSWpQ0GTsA1JTOC2WIkaTtEzPNWdvw_2gHsY/viewform?embedded=true">Loading…</iframe>
         </div>
     </section>
     <footer>
@@ -104,7 +55,7 @@
                 <a href="#">Twitter</a> | 
                 <a href="#">Instagram</a>
             </div>
-            <p>&copy; 2024 ValueFurnish. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>&copy; 2024 ValueFurnish. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
         </div>
     </footer>
 </body>
